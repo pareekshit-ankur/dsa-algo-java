@@ -5,6 +5,7 @@ import main.java.com.pareekshit.collections.Employee;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class test4 {
     public static void main(String[] args) {
@@ -30,5 +31,6 @@ public class test4 {
 
         employeeList.stream().filter(employee -> employee.getSalary() < 200).forEach(employee -> employee.setSalary(employee.getSalary() + 100));
         employeeList.forEach(employee -> System.out.println(employee.getSalary()));
+        employeeList.stream().filter(employee -> employee.getName().equals("abc")).collect(Collectors.toList());
     }
 }
