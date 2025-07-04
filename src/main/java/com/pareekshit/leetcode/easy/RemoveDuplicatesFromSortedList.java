@@ -1,5 +1,7 @@
 package main.java.com.pareekshit.leetcode.easy;
 
+import main.java.com.pareekshit.leetcode.ListNode;
+
 public class RemoveDuplicatesFromSortedList {
     public static void main(String[] args) {
         ListNode l6 = new ListNode(3, null);
@@ -39,19 +41,4 @@ public class RemoveDuplicatesFromSortedList {
 
 }
 
-class ListNode {
-    int val;
-    ListNode next;
 
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}

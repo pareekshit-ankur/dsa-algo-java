@@ -50,6 +50,15 @@ public class Util {
         System.out.println();
     }
 
+    public static void printLinkedList(main.java.com.pareekshit.leetcode.ListNode head) {
+        main.java.com.pareekshit.leetcode.ListNode temp = head;
+        while (temp != null) {
+            System.out.print(temp.val + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
     public static void printLinkedListDown(ListNode head) {
         ListNode temp = head;
         while (temp != null) {

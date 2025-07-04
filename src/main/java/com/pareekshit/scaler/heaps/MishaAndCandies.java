@@ -13,7 +13,7 @@ public class MishaAndCandies {
     }
 
     public static int solve(int[] A, int B) {
-        Queue<Integer> minHeap = new PriorityQueue<>();
+        /*Queue<Integer> minHeap = new PriorityQueue<>();
         for (int i : A) {
             minHeap.add(i);
         }
@@ -27,6 +27,22 @@ public class MishaAndCandies {
                 minHeap.add(candy);
             }
         }
-        return count;
+        return count;*/
+
+        Queue<Integer> minHeap = new PriorityQueue<>();
+        for (int j : A) {
+            minHeap.add(j);
+        }
+        int ans = 0;
+        while(!minHeap.isEmpty() && minHeap.peek()<=B){
+            int candies = minHeap.poll();
+            int eat = candies/2;
+            if(!minHeap.isEmpty()){
+                int c = minHeap.poll();
+                minHeap.add(c+ (candies - eat));
+            }
+            ans+= eat;
+        }
+        return ans;
     }
 }
