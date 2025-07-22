@@ -3,8 +3,8 @@ package main.java.com.pareekshit.recursion;
 public class PalindromeString {
 
     public static void main(String[] args) {
-        String s = "a";
-        System.out.println(isPalindrome(s, 0, s.length() - 1));
+        System.out.println(isPalindrome("abc", 0, "abc".length() - 1));
+        System.out.println(isPalindrome("ada", 0, "ada".length() - 1));
     }
 
     public static boolean isPalindrome(String s, int l, int r) {

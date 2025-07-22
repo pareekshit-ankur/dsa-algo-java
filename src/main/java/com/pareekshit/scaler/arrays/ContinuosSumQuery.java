@@ -1,9 +1,11 @@
 package main.java.com.pareekshit.scaler.arrays;
 
+import java.util.Arrays;
+
 public class ContinuosSumQuery {
 
     public static void main(String[] args) {
-        System.out.println(solve(5, new int[][]{{1, 2, 10}, {2, 3, 20}, {2, 5, 25}}));
+        Arrays.stream(solve(5, new int[][]{{1, 2, 10}, {2, 3, 20}, {2, 5, 25}})).forEach(i -> System.out.println());
     }
 
     public static int[] solve(int A, int[][] B) {
