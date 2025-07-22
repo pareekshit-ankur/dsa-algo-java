@@ -53,6 +53,7 @@ public class FirstNonRepeatingLetter {
         for (Character key : charecters) {
             if (charSet.get(key) == 1) {
                 unique = key;
+                str.indexOf(unique);
                 return String.valueOf(unique);
             }
         }

@@ -24,7 +24,7 @@ public class FindTheKthCharacterInStringGame2 {
                 }
             }
         }
-        return sb.charAt(k - 1);
+        return sb.charAt((int) (k - 1));
     }
 
     public static char kthCharacter(int k) {

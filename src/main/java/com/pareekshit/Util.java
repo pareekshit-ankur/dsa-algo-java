@@ -34,11 +34,20 @@ public class Util {
         }
     }
 
-    public static void printArrayList(ArrayList<Integer> A) {
+    public static void printArrayList(List<Integer> A) {
         for (Integer i : A) {
             System.out.print(i + " ");
         }
         System.out.println();
+    }
+
+    public static void print2DArrayList(List<List<Integer>> A) {
+        for (List<Integer> list : A) {
+            for (Integer i : list) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
     }
 
     public static void printLinkedList(ListNode head) {
