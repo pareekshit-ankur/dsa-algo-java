@@ -14,7 +14,7 @@ public  class RightViewOfBinaryTree {
         TreeNode right = new TreeNode(2);
         head.left = left;
         head.right = right;
-        Util.printArrayList(solve(head));
+        Util.printIntegerArrayList(solve(head));
     }
     public static ArrayList<Integer> solve(TreeNode A) {
         if (A == null) {

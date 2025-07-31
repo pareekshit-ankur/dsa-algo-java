@@ -34,8 +34,15 @@ public class Util {
         }
     }
 
-    public static void printArrayList(List<Integer> A) {
+    public static void printIntegerArrayList(List<Integer> A) {
         for (Integer i : A) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+
+    public static void printArrayList(List<String> A) {
+        for (String i : A) {
             System.out.print(i + " ");
         }
         System.out.println();

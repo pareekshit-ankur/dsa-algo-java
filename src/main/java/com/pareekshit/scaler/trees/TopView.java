@@ -14,7 +14,7 @@ public class TopView {
         TreeNode right = new TreeNode(3);
         head.left = left;
         head.right = right;
-        Util.printArrayList(solve(head));
+        Util.printIntegerArrayList(solve(head));
         topView(head);
     }
 

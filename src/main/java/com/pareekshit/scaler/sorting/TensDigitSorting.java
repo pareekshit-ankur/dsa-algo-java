@@ -9,8 +9,8 @@ import java.util.List;
 public class TensDigitSorting {
 
     public static void main(String[] args) {
-        Util.printArrayList(solve(new ArrayList<>(List.of(15, 11, 7, 19))));
-        Util.printArrayList(solve(new ArrayList<>(List.of(36, 13, 13, 26, 37, 28, 27, 43, 7))));
+        Util.printIntegerArrayList(solve(new ArrayList<>(List.of(15, 11, 7, 19))));
+        Util.printIntegerArrayList(solve(new ArrayList<>(List.of(36, 13, 13, 26, 37, 28, 27, 43, 7))));
     }
 
     public static ArrayList<Integer> solve(ArrayList<Integer> A) {

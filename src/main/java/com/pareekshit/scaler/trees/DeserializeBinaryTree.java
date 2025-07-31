@@ -13,8 +13,8 @@ public class DeserializeBinaryTree {
         //Util.printArrayList(PreOrderTraversal.preorderTraversal(node));
         //Util.printArrayList(PostOrderTraversal.postorderTraversal(node));
         TreeNode node = solve(new int[]{1, 2, 4, -1, 3, -1, 5, 7, -1, -1, 6, -1, 8, -1, -1, -1, -1});
-        Util.printArrayList(PreOrderTraversal.preorderTraversal(node));
-        Util.printArrayList(PostOrderTraversal.postorderTraversal(node));
+        Util.printIntegerArrayList(PreOrderTraversal.preorderTraversal(node));
+        Util.printIntegerArrayList(PostOrderTraversal.postorderTraversal(node));
     }
 
     public static TreeNode solve(int[] A) {
